@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.head {
+  @apply text-3xl font-semibold mt-12;
+}
+
+.list {
+  @apply px-4 py-2 rounded-full border border-blue-600 hover:scale-95 transition duration-200;
+}
+
+.container {
+  @apply flex flex-wrap gap-2 pb-8;
+}
+
+.active {
+  @apply p-2;
+}
+.suggest {
+  @apply px-3 py-1 dark:hover:bg-darkBlue3 rounded-sm hover:bg-blue-600;
+}
+
+#Dog-image {
+  @apply w-full h-full object-cover;
+}
+#image-container {
+  @apply w-[300px] h-[200px]  overflow-hidden;
+}
+#downloadBtn {
+  @apply flex items-center space-x-2 py-1 px-3 rounded-full border border-blue-600 dark:border-blue-600 hover:scale-95 transition duration-200;
+}
+#paw {
+  @apply h-5 w-[22px];
+}

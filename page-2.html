@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/dog.png" />
+    <script src="js/page-2.js" defer></script>
+    <title>Dog-Pic</title>
+  </head>
+  <body class="bg-white dark:bg-darkBlue dark:text-white">
+    <section class="px-6 md:px-40 mb-20 min-h-screen">
+      <div
+        id="spinner"
+        class="fixed top-0 left-0 w-screen h-screen items-center justify-center backdrop-blur-sm z-30 hidden"
+      >
+        <div class="animate-spin">
+          <i class="ri-loader-4-line w-16 h-16 text-7xl font-thin ani"></i>
+        </div>
+      </div>
+      <nav class="flex items-center justify-between py-6 space-x-6">
+        <a href="./index.html" class="flex items-center justify-center">
+          <img src="images/dog.png" alt="" class="h-16 w-16" />
+          <p class="text-4xl font-bold dark:text-white">
+            P<span class="text-blue-600 dark:text-[#51c4ea]">i</span>c
+          </p>
+        </a>
+        <button
+          id="theme-toggle"
+          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full text-sm py-2 px-3"
+        >
+          <i id="dark-icon" class="ri-moon-fill w-5 h-5 text-2xl hidden"></i>
+          <i id="light-icon" class="ri-sun-fill w-5 h-5 text-2xl hidden"></i>
+        </button>
+      </nav>
+      <div>
+        <div class="flex flex-col items-center justify-start">
+          <h1 id="Breed" class="my-2 text-3xl font-semibold capitalize"></h1>
+          <div
+            id="parent"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 mt-4"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <footer class="dark:bg-darkBlue2 bg-gray-200 px-6 md:px-24 pt-4">
+      <div
+        class="flex flex-col items-center justify-between md:flex-row space-y-4 md:space-y-0 pb-20"
+      >
+        <div class="flex justify-start space-x-1 p">
+          <img src="images/dog.png" alt="" class="h-10 w-10" />
+          <div>
+            <h1 class="font-semibold text-2xl">Developed By</h1>
+            <a
+              href="https://github.com/miki-ux?tab=repositories"
+              class="text-sm font-medium hover:text-blue-600"
+              >Mikiyas Adugna</a
+            >
+          </div>
+        </div>
+        <div>
+          <a
+            href="https://github.com/miki-ux?tab=repositories"
+            class="flex space-x-2 items-center justify-center text-2xl font-semibold p-2"
+          >
+            <i class="ri-github-fill text-bold text-3xl"></i>
+            <p class="hover:text-blue-600">Miki-ux</p></a
+          >
+        </div>
+
+        <div
+          class="flex space-x-2 items-center justify-center md:sapce-x-0 md:flex-col md:justify-start md:items-baseline"
+        >
+          <h1 class="font-semibold text-2xl">Powered by</h1>
+          <a href="http://dog.ceo/" class="font-normal hover:text-blue-600"
+            >Dog ceo</a
+          >
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center pb-2 md:justify-start">
+        <p class="text-gray-500 text-sm font-thin">
+          Dog-pic &copy 2023 All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
